@@ -46,6 +46,9 @@ nav li a {
     border-radius: 5px;
     border: none;
 }
+.btn :hover{
+    color: #757575;
+}
 .photo{
     width: 580px;
     margin: 38px;
@@ -113,3 +116,116 @@ main{
     box-shadow: 0px 6px 50px 0 #FFFFFF;
 }
 main section{ margin-top: 130px;}
+/*
+button :hover{
+    background-color: rebeccapurple;
+    color: brown;
+} */
+footer{
+    justify-content: space-around;
+    justify-content: space-between;
+
+ }
+ .text-section{
+    color: #FD6E0A;
+    font-weight: bold;
+    
+
+ }
+ #footer-work nav {
+  display: flex;
+  justify-content: center; /* center buttons horizontally */
+  gap: 20px; /* adds space between buttons */
+  margin-top: 20px;
+}
+
+#footer-work button {
+  background-color: #333; /* dark background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#footer-work button:hover {
+  background-color: #0077b5; /* blue hover color */
+}
+@media (max-width: 767px) {
+  /* Navigation stacked vertically */
+  nav.main-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+  }
+  .nav-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  /* Banner stacked vertically, center aligned */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .banner-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .name2 {
+    font-size: 24px;
+  }
+  .photo {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* About section padding and layout */
+  .about {
+    padding: 50px 20px;
+  }
+  .about-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Skills stacked vertically */
+  .skill-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    align-items: center;
+  }
+  .skill {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* Footer buttons stacked */
+  #footer-work nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #footer-work button {
+    width: 80%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}
